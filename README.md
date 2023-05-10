@@ -1,4 +1,4 @@
-### DART_APPLICATION_1
+## DART_1Day 2Hour Project
 
 <br>
 
@@ -9,8 +9,24 @@
 Developer : NA
 Since : 2023.05.09
 object : Study & Practice
+Language : Dart
 ```
 
 - A sample command-line application with an entrypoint in `bin/` 
 - library code in `lib/`
 - and example unit test in `test/`
+
+---
+<br>
+
+```
+Developer : NA
+Date : 2023.05.10
+file : 에제1_230510.dart
+subject : What is Dart? & Basic Practice 
+```
+
+- main() method
+- Dart의 변수 생성
+- Dynamic DataType
+- Null safety
