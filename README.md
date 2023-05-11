@@ -30,3 +30,17 @@ subject : What is Dart? & Basic Practice
 - Dart의 변수 생성
 - Dynamic DataType
 - Null safety
+
+---
+<br>
+
+```
+Developer : NA
+Date : 2023.05.11
+file : 에제2_230511.dart
+subject : Basic Practice2 
+```
+
+- final
+- late
+- const
