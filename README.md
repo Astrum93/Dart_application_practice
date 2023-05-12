@@ -51,7 +51,7 @@ subject : Basic Practice2
 ```
 Developer : NA
 Date : 2023.05.12
-file : 에제2_230512.dart
+file : 에제3_230512.dart
 subject : Basic Practice3 
 ```
 
