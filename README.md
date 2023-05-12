@@ -44,3 +44,20 @@ subject : Basic Practice2
 - final
 - late
 - const
+
+---
+<br>
+
+```
+Developer : NA
+Date : 2023.05.12
+file : 에제2_230512.dart
+subject : Basic Practice3 
+```
+
+- Data Type
+- List
+- String interpolation
+- Collection For
+- Map
+- Set
