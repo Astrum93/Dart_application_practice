@@ -1,5 +1,3 @@
-import 'dart:html';
-
 String sayHello(String NA) => "Hello $NA nice to meet you!";
 
 num plus(num a, num b) => a + b;
@@ -37,6 +35,21 @@ String capitalizeName2(String? name) =>
 // ??를 사용하여 짧게 만들기 //
 String capitalizeName(String? name) => name?.toUpperCase() ?? 'JM';
 
+// Typedef //
+typedef ListOfInts = List<int>;
+
+ListOfInts reverseListOfNumbers(ListOfInts list) {
+  var reversed = list.reversed;
+  return reversed.toList();
+}
+
+// Map의 typedef //
+typedef UserInfo = Map<String, String>;
+
+String sayHI(UserInfo userInfo) {
+  return "HI ${userInfo['name']}";
+}
+
 void main() {
   print(sayHello('JM'));
 
@@ -51,6 +64,10 @@ void main() {
 
   String? myname;
   myname ??= 'NA';
-  myname ??= 'JM';
+  myname ??= 'JMIN';
   print(myname);
+
+  print(reverseListOfNumbers([1, 2, 3]));
+
+  print(sayHI({"name": 'na'}));
 }

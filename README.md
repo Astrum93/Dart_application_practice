@@ -61,3 +61,21 @@ subject : Basic Practice3
 - Collection For
 - Map
 - Set
+
+---
+<br>
+
+```
+Developer : NA
+Date : 2023.05.13
+file : 에제4_230513.dart
+subject : Basic Practice4 
+```
+
+- Defining a Function
+- fat arrow syntax
+- Named Parameters
+- Required
+- Optional Positional Parameters
+- QQ Operator ?? & ??=
+- Typedef
