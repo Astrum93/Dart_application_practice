@@ -29,9 +29,13 @@ String capitalizeName1(String? name) {
   return 'JM';
 }
 
-String capitalizeName(String? name) =>
-// name이 null과 같이 않거나  // 
-name != null ? name.toUpperCase() : 'JM';
+// 짧게 만들기 1 //
+String capitalizeName2(String? name) =>
+// name이 null과 같이 않다면 toUpperCase() :(그렇지 않으면) 'JM'을 return  //
+    name != null ? name.toUpperCase() : 'JM';
+
+// ??를 사용하여 짧게 만들기 //
+String capitalizeName(String? name) => name?.toUpperCase() ?? 'JM';
 
 void main() {
   print(sayHello('JM'));
@@ -44,4 +48,9 @@ void main() {
 
   capitalizeName('NA');
   capitalizeName(null);
+
+  String? myname;
+  myname ??= 'NA';
+  myname ??= 'JM';
+  print(myname);
 }
