@@ -90,6 +90,19 @@ class Player5 {
   }
 }
 
+// Cascade Notation //
+class Player {
+  String name;
+  int xp;
+  String team;
+
+  Player({required this.name, required this.xp, required this.team});
+
+  void sayHello() {
+    print("Hi my name is $name and my team color is $team");
+  }
+}
+
 main() {
   var player1 = new Player1();
   print(player1.name1);
@@ -134,4 +147,15 @@ main() {
     var player5 = Player5.fromJson(playerJson);
     player5.sayHello();
   });
+
+  var aaa = Player(name: 'NA', xp: 100, team: 'Black');
+  aaa.name = 'NA';
+  aaa.xp = 9999;
+  aaa.team = 'Blue';
+
+  var bbb = Player(name: 'NA', xp: 100, team: 'Black')
+    ..name = 'NA'
+    ..xp = 9999
+    ..team = 'Blue'
+    ..sayHello();
 }
