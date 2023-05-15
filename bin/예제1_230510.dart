@@ -2,7 +2,7 @@ void main() {
   var name = 'NA';
   print(name);
 
-  var name1;
+  Object name1;
   name1 = 'na';
   name1 = 10;
   name1 = true;

@@ -59,7 +59,7 @@ void main() {
     'superpower': false,
   };
 
-  Map<List<int>, bool> player_num = {
+  Map<List<int>, bool> playerNum = {
     [1, 2, 3]: true,
     [2]: false,
     [3, 4, 5]: false,
@@ -71,7 +71,7 @@ void main() {
   ];
 
   print(player);
-  print(player_num);
+  print(playerNum);
   print(players);
 
   // Set //
