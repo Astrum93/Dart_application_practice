@@ -91,18 +91,118 @@ class Player5 {
 }
 
 // Cascade Notation //
-class Player {
-  String name;
-  int xp;
-  String team;
+class Player6 {
+  String name6;
+  int xp6;
+  String team6;
 
-  Player({required this.name, required this.xp, required this.team});
+  Player6({required this.name6, required this.xp6, required this.team6});
 
   void sayHello() {
-    print("Hi my name is $name and my team color is $team");
+    print("Hi my name is $name6 and my team color is $team6");
   }
 }
 
+// Enums //
+enum Team { red, Blue }
+
+enum XPLevel { Iron, Bronze, Shilver, Gold }
+
+class Player7 {
+  String name7;
+  XPLevel xp7;
+  Team team7;
+
+  Player7({
+    required this.name7,
+    required this.xp7,
+    required this.team7,
+  });
+
+  void sayHello() {
+    print("Hi my name is $name7 and my team color, xp is $team7 , $xp7");
+  }
+}
+
+// Abstract Class //
+abstract class Human1 {
+  void walk();
+}
+
+class Player8 extends Human1 {
+  String name8;
+  XPLevel xp8;
+  Team team8;
+
+  Player8({
+    required this.name8,
+    required this.xp8,
+    required this.team8,
+  });
+
+  void walk() {
+    print("$name8 Player walking");
+  }
+
+  void sayHello() {
+    print("Hi my name is $name8 and my team color, xp is $team8 , $xp8");
+  }
+}
+
+// 상속 Inheritance //
+class Human {
+  final String name9;
+
+  Human(this.name9);
+
+  void sayHello() {
+    print("Hi my name is $name9");
+  }
+}
+
+class Player9 extends Human {
+  final Team team9;
+
+  Player9({
+    required this.team9,
+    required String name9,
+  }) : super(name9);
+
+  @override
+  void sayHello() {
+    super.sayHello();
+    print('and I play for $team9');
+  }
+}
+
+// Mixins //
+class Strong {
+  final double strenghtLevel = 1500.99;
+}
+
+class QuichRunner {
+  void runQuick() {
+    print("ruuuuuuuuuuuuuuuun!");
+  }
+}
+
+class Tall {
+  final double height = 1.99;
+}
+
+class Player10 with Strong, QuichRunner, Tall {
+  final Team team;
+
+  Player10({
+    required this.team,
+  });
+}
+
+class Hors with Strong, QuichRunner {}
+
+class kid with QuichRunner {}
+
+/////////////////////////////////////////////////////////////////////////////
 main() {
   var player1 = new Player1();
   print(player1.name1);
@@ -148,14 +248,28 @@ main() {
     player5.sayHello();
   });
 
-  var aaa = Player(name: 'NA', xp: 100, team: 'Black');
-  aaa.name = 'NA';
-  aaa.xp = 9999;
-  aaa.team = 'Blue';
+  var aaa = Player6(name6: 'NA', xp6: 100, team6: 'Black');
+  aaa.name6 = 'NA';
+  aaa.xp6 = 9999;
+  aaa.team6 = 'Blue';
 
-  var bbb = Player(name: 'NA', xp: 100, team: 'Black')
-    ..name = 'NA'
-    ..xp = 9999
-    ..team = 'Blue'
+  var bbb = Player6(name6: 'NA', xp6: 100, team6: 'Black')
+    ..name6 = 'NA'
+    ..xp6 = 9999
+    ..team6 = 'Blue'
     ..sayHello();
+
+  var na = Player7(name7: "na", xp7: XPLevel.Bronze, team7: Team.red);
+
+  var player8 = Player8(name8: "NA", xp8: XPLevel.Shilver, team8: Team.Blue);
+  player8.walk();
+
+  var player9 = Player9(
+    team9: Team.red,
+    name9: 'NA',
+  );
+  player9.sayHello();
+
+  var player10 = Player10(team: Team.red);
+  player10.runQuick();
 }
