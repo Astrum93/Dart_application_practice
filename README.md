@@ -17,7 +17,7 @@ Language : Dart
 - A sample command-line application with an entrypoint in `bin/` 
 - library code in `lib/`
 - and example unit test in `test/`
-
+### [Set Dart](https://astrum93.tistory.com/70)
 ---
 <br>
 
@@ -27,7 +27,7 @@ Date : 2023.05.10
 file : 에제1_230510.dart
 subject : What is Dart? & Basic Practice 
 ```
-
+### [Blog Posting Here](https://astrum93.tistory.com/71)
 - main() method
 - Dart의 변수 생성
 - Dynamic DataType
@@ -42,7 +42,7 @@ Date : 2023.05.11
 file : 에제2_230511.dart
 subject : Basic Practice2 
 ```
-
+### [Blog Posting Here](https://astrum93.tistory.com/72)
 - final
 - late
 - const
@@ -56,7 +56,7 @@ Date : 2023.05.12
 file : 에제3_230512.dart
 subject : Basic Practice3 
 ```
-
+### [Blog Posting Here](https://astrum93.tistory.com/73)
 - Data Type
 - List
 - String interpolation
@@ -73,7 +73,7 @@ Date : 2023.05.13
 file : 에제4_230513.dart
 subject : Basic Practice4 
 ```
-
+### [Blog Posting Here](https://astrum93.tistory.com/74)
 - Defining a Function
 - fat arrow syntax
 - Named Parameters
@@ -91,7 +91,7 @@ Date : 2023.05.14
 file : 에제5_230514.dart
 subject : Basic Practice5 
 ```
-
+### [Blog Posting Here](https://astrum93.tistory.com/75)
 - Class
 - 생성자 ( Constructors ) 
 - Named Constructor Parameters
